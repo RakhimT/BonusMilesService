@@ -1,12 +1,5 @@
-public class CalcService {
+public class BonusMilesService {
 
-    public int max(int a, int b) {
-        int result;
-        if (a > b) {
-            result = a;
-        } else {
-            result = b;
-        }
-        return result;
-    }
-}
+    public int calculate(int cost) {
+        int miles = 20; // (за каждые 20 рублей начисляется 1 милля)
+        return cost / miles;
